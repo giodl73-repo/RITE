@@ -76,5 +76,6 @@ cargo fmt --check
 cargo test
 cargo run -p rite-cli -- validate fixtures\seed-rite.json
 cargo run -p rite-cli -- validate fixtures\consumers\banish-nature-rite-gamepack.json
+cargo run -p rite-cli -- validate fixtures\consumers\banish-panel-loop-gamepack.json
 git grep -n "RITE" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
 ```

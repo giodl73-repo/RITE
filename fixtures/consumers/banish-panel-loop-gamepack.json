@@ -1,0 +1,105 @@
+{
+  "document_id": "rite:consumer:banish-panel-loop-gamepack",
+  "rites": [
+    {
+      "rite_id": "rite:ice-bridge-tithe",
+      "label": "Ice bridge tithe",
+      "kind": "oath",
+      "obligations": [{ "obligation_id": "obligation:pay-river-shrine-first", "category": "costly_offering", "description": "Store crossing before shrine tithe is treated as illegitimate winter-taking." }],
+      "taboos": [{ "taboo_id": "taboo:untithed-crossing", "boundary": "Crossing with stores before public offering damages trust." }],
+      "sacred_places": [{ "place_id": "place:river-shrine", "label": "River shrine", "access_note": "Reached through the same ice window as the store crossing." }],
+      "calendar_events": [{ "event_id": "calendar:ice-bridge-window", "timing": "freeze-thaw crossing window", "activates": "Tithe and hauling compete for the same safe ice." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "ice-bridge-tithe" }]
+    },
+    {
+      "rite_id": "rite:miller-crows-appeal",
+      "label": "Miller crows' appeal",
+      "kind": "legitimacy",
+      "obligations": [{ "obligation_id": "obligation:public-grain-appeal", "category": "required_action", "description": "Tax grain disputes must be appealed before measurement closes." }],
+      "taboos": [{ "taboo_id": "taboo:hidden-grain-delay", "boundary": "Using appeal delay to hide grain marks the miller as false." }],
+      "sacred_places": [{ "place_id": "place:mill-measure", "label": "Mill measure", "access_note": "Public hearing point beside the mill." }],
+      "calendar_events": [{ "event_id": "calendar:tax-measure-day", "timing": "tax grain measurement", "activates": "Appeal can suspend grain measurement while crows still feed." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "miller-crows-appeal" }]
+    },
+    {
+      "rite_id": "rite:bone-ash-consent",
+      "label": "Bone ash consent",
+      "kind": "funeral",
+      "obligations": [{ "obligation_id": "obligation:public-ancestor-consent", "category": "access_rule", "description": "Protected burial material may be used only after public consent." }],
+      "taboos": [{ "taboo_id": "taboo:private-bone-ash", "boundary": "Private use of ancestor ash makes orchard recovery a desecration." }],
+      "sacred_places": [{ "place_id": "place:ancestor-kiln", "label": "Ancestor kiln", "access_note": "Material source for proposed orchard renewal." }],
+      "calendar_events": [{ "event_id": "calendar:orchard-renewal-council", "timing": "orchard renewal council", "activates": "Food recovery and protected material handling are decided together." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "bone-ash-orchard" }]
+    },
+    {
+      "rite_id": "rite:first-milk-vow",
+      "label": "First-milk vow",
+      "kind": "harvest",
+      "obligations": [{ "obligation_id": "obligation:offer-first-milk", "category": "costly_offering", "description": "First milk must be offered before sale, slaughter, or trade substitution." }],
+      "taboos": [{ "taboo_id": "taboo:sell-before-offering", "boundary": "Trading first milk for salt before offering breaks herd legitimacy." }],
+      "sacred_places": [{ "place_id": "place:lambing-pen-threshold", "label": "Lambing pen threshold", "access_note": "Where offering and herd care meet." }],
+      "calendar_events": [{ "event_id": "calendar:lambing-week", "timing": "lambing week", "activates": "Salt caravan and first-milk obligation collide." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "salt-road-lambing" }]
+    },
+    {
+      "rite_id": "rite:bell-mine-oath",
+      "label": "Bell mine oath",
+      "kind": "protection",
+      "obligations": [{ "obligation_id": "obligation:stop-when-bell-rings", "category": "required_action", "description": "Mine work stops when warning signs are rung at the bell post." }],
+      "taboos": [{ "taboo_id": "taboo:work-through-warning", "boundary": "Ignoring the bell repeats the old collapse betrayal." }],
+      "sacred_places": [{ "place_id": "place:mine-bell-post", "label": "Mine bell post", "access_note": "Warning point at the shallow ore pit." }],
+      "calendar_events": [{ "event_id": "calendar:mine-reopening", "timing": "pit reopening", "activates": "Oath stoppage competes with ore and fuel needs." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "bell-mine-lichen" }]
+    },
+    {
+      "rite_id": "rite:empty-net-feast",
+      "label": "Empty-net feast",
+      "kind": "festival",
+      "obligations": [{ "obligation_id": "obligation:public-feast-ration", "category": "required_action", "description": "The fish feast must be public even when nets are short." }],
+      "taboos": [{ "taboo_id": "taboo:hidden-feast-rationing", "boundary": "Hidden rationing preserves food but violates feast trust." }],
+      "sacred_places": [{ "place_id": "place:feast-hall-weir", "label": "Feast hall weir", "access_note": "Fish source and public meal site are socially linked." }],
+      "calendar_events": [{ "event_id": "calendar:fish-feast", "timing": "required fish feast", "activates": "Weir repair and public distribution collide." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "feast-of-empty-nets" }]
+    },
+    {
+      "rite_id": "rite:grave-grass-exception",
+      "label": "Grave grass exception",
+      "kind": "protection",
+      "obligations": [{ "obligation_id": "obligation:name-firebreak-restitution", "category": "costly_offering", "description": "Emergency cutting of grave grass requires public restitution." }],
+      "taboos": [{ "taboo_id": "taboo:cut-grave-grass-alone", "boundary": "Private cutting is treated as grave neglect even if fire is near." }],
+      "sacred_places": [{ "place_id": "place:widow-hill-graves", "label": "Widow Hill graves", "access_note": "Protected grass lies on the fastest firebreak line." }],
+      "calendar_events": [{ "event_id": "calendar:dry-firebreak-window", "timing": "dry firebreak window", "activates": "Emergency exception and grave protection are judged together." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "widow-hill-firebreak" }]
+    },
+    {
+      "rite_id": "rite:saint-day-substitution",
+      "label": "Saint-day substitution",
+      "kind": "pilgrimage",
+      "obligations": [{ "obligation_id": "obligation:explain-market-closure", "category": "status_change", "description": "Canceling saint-day travel requires public explanation and substitute rite." }],
+      "taboos": [{ "taboo_id": "taboo:silent-quarantine", "boundary": "Closing the gate without substitute rite looks like selfish market control." }],
+      "sacred_places": [{ "place_id": "place:saint-day-market-gate", "label": "Saint-day market gate", "access_note": "Pilgrims, trade, fodder, and quarantine all meet here." }],
+      "calendar_events": [{ "event_id": "calendar:saint-day-market", "timing": "saint-day market", "activates": "Quarantine tests pilgrimage expectation." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "turnip-saint-quarantine" }]
+    },
+    {
+      "rite_id": "rite:charcoal-bee-bargain",
+      "label": "Charcoal bee bargain",
+      "kind": "oath",
+      "obligations": [{ "obligation_id": "obligation:dual-winter-contribution", "category": "costly_offering", "description": "Burners and beekeepers must both contribute to winter peace." }],
+      "taboos": [{ "taboo_id": "taboo:one-sided-grove-taking", "boundary": "Taking fuel or honey without visible reciprocal contribution breaks the bargain." }],
+      "sacred_places": [{ "place_id": "place:coppice-bargain-grove", "label": "Coppice bargain grove", "access_note": "Fuel cutting and bee forage overlap." }],
+      "calendar_events": [{ "event_id": "calendar:winter-bargain", "timing": "winter bargain", "activates": "Coppice, charcoal, honey, and social peace are settled together." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "charcoal-bee-bargain" }]
+    },
+    {
+      "rite_id": "rite:ledger-witness-naming",
+      "label": "Ledger witness naming",
+      "kind": "legitimacy",
+      "obligations": [{ "obligation_id": "obligation:witness-ledger-move", "category": "access_rule", "description": "Ledgers may be moved or copied only with witnesses." }],
+      "taboos": [{ "taboo_id": "taboo:unwitnessed-ledger-salvage", "boundary": "Quick salvage without witnesses preserves records but makes claims suspect." }],
+      "sacred_places": [{ "place_id": "place:flooded-record-house", "label": "Flooded record house", "access_note": "Records, witnesses, and flood routes collide." }],
+      "calendar_events": [{ "event_id": "calendar:flood-record-salvage", "timing": "flood record salvage", "activates": "Witness legitimacy competes with water timing." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "flooded-ink-house" }]
+    }
+  ]
+}
