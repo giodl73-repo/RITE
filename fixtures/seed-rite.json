@@ -1,0 +1,83 @@
+{
+  "document_id": "rite:seed",
+  "rites": [
+    {
+      "rite_id": "rite:winter-hearth-oath",
+      "label": "Winter hearth oath",
+      "kind": "oath",
+      "obligations": [
+        {
+          "obligation_id": "obligation:share-last-fuel",
+          "category": "required_action",
+          "description": "Households must pool emergency fuel before the first hard freeze."
+        }
+      ],
+      "taboos": [
+        {
+          "taboo_id": "taboo:cold-hearth",
+          "boundary": "Letting a neighbor's hearth die during oath week marks a household as oath-broken."
+        }
+      ],
+      "sacred_places": [
+        {
+          "place_id": "place:common-hearth",
+          "label": "Common hearth",
+          "access_note": "Open during oath week, even to rivals."
+        }
+      ],
+      "calendar_events": [
+        {
+          "event_id": "calendar:first-hard-freeze",
+          "timing": "first hard freeze",
+          "activates": "Emergency fuel obligations begin."
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "seed",
+          "path": "fixtures\\seed-rite.json",
+          "anchor": "rite:winter-hearth-oath"
+        }
+      ]
+    },
+    {
+      "rite_id": "rite:flood-name-mourning",
+      "label": "Flood-name mourning",
+      "kind": "mourning",
+      "obligations": [
+        {
+          "obligation_id": "obligation:carry-lost-names",
+          "category": "mourning_duty",
+          "description": "Survivors recite the names of flood dead before reopening the market road."
+        }
+      ],
+      "taboos": [
+        {
+          "taboo_id": "taboo:unnamed-crossing",
+          "boundary": "Crossing the repaired flood bridge before the names are spoken is treated as civic contempt."
+        }
+      ],
+      "sacred_places": [
+        {
+          "place_id": "place:flood-bridge",
+          "label": "Flood bridge",
+          "access_note": "Closed until the mourning rite is completed."
+        }
+      ],
+      "calendar_events": [
+        {
+          "event_id": "calendar:first-market-after-flood",
+          "timing": "first market after floodwaters fall",
+          "activates": "Names must be recited before trade resumes."
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "seed",
+          "path": "fixtures\\seed-rite.json",
+          "anchor": "rite:flood-name-mourning"
+        }
+      ]
+    }
+  ]
+}
