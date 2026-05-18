@@ -1,0 +1,105 @@
+{
+  "document_id": "rite:consumer:banish-nature-rite-gamepack",
+  "rites": [
+    {
+      "rite_id": "rite:orchard-wake",
+      "label": "Orchard wake",
+      "kind": "funeral",
+      "obligations": [{ "obligation_id": "obligation:keep-wake-path", "category": "mourning_duty", "description": "Mourners must use the orchard path until the wake closes." }],
+      "taboos": [{ "taboo_id": "taboo:cutting-wake-short", "boundary": "Abandoning the wake path marks the dead as uncarried." }],
+      "sacred_places": [{ "place_id": "place:wake-orchard", "label": "Wake orchard", "access_note": "Open to mourners but unsafe at dusk." }],
+      "calendar_events": [{ "event_id": "calendar:mourning-week", "timing": "mourning week", "activates": "Wake obligations override ordinary harvest routes." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "wolf-orchard-wake" }]
+    },
+    {
+      "rite_id": "rite:ridge-oath-opening",
+      "label": "Ridge oath opening",
+      "kind": "oath",
+      "obligations": [{ "obligation_id": "obligation:restitution-planting", "category": "costly_offering", "description": "Opening sacred pasture requires later restitution planting." }],
+      "taboos": [{ "taboo_id": "taboo:private-ridge-grazing", "boundary": "Using oath land without public vow breaks common legitimacy." }],
+      "sacred_places": [{ "place_id": "place:sacred-ridge", "label": "Sacred ridge", "access_note": "Closed except through public oath." }],
+      "calendar_events": [{ "event_id": "calendar:drought-council", "timing": "drought council", "activates": "The community may open oath pasture." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "goats-of-the-sacred-ridge" }]
+    },
+    {
+      "rite_id": "rite:famine-seal",
+      "label": "Famine seal",
+      "kind": "protection",
+      "obligations": [{ "obligation_id": "obligation:witness-store-opening", "category": "access_rule", "description": "Sealed stores may open only with witnesses." }],
+      "taboos": [{ "taboo_id": "taboo:hidden-granary-opening", "boundary": "Private inspection destroys trust even when rats are suspected." }],
+      "sacred_places": [{ "place_id": "place:sealed-granary", "label": "Sealed granary", "access_note": "Inspection requires public witness." }],
+      "calendar_events": [{ "event_id": "calendar:rat-year", "timing": "rat year", "activates": "Pest signs challenge the famine seal." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "rat-year-granary-rite" }]
+    },
+    {
+      "rite_id": "rite:harvest-procession",
+      "label": "Harvest procession",
+      "kind": "harvest",
+      "obligations": [{ "obligation_id": "obligation:walk-harvest-line", "category": "required_action", "description": "The procession legitimizes winter rationing." }],
+      "taboos": [{ "taboo_id": "taboo:unwalked-ration", "boundary": "Rations set without procession are treated as selfish accounting." }],
+      "sacred_places": [{ "place_id": "place:flower-strip", "label": "Flower strip", "access_note": "Procession uses the same warm week as hive care." }],
+      "calendar_events": [{ "event_id": "calendar:last-warm-week", "timing": "last warm week", "activates": "Procession, hive care, and medicine harvest collide." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "bees-before-the-frost" }]
+    },
+    {
+      "rite_id": "rite:blackthorn-land-oath",
+      "label": "Blackthorn land oath",
+      "kind": "protection",
+      "obligations": [{ "obligation_id": "obligation:keep-living-boundary", "category": "forbidden_action", "description": "The hedge must not be cut except under public rescue vow." }],
+      "taboos": [{ "taboo_id": "taboo:cut-boundary-alone", "boundary": "Private cutting breaks the field boundary oath." }],
+      "sacred_places": [{ "place_id": "place:blackthorn-boundary", "label": "Blackthorn boundary", "access_note": "Protective but obstructive during storms." }],
+      "calendar_events": [{ "event_id": "calendar:storm-rescue", "timing": "storm season rescue", "activates": "Rescue urgency can override boundary protection." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "blackthorn-boundary" }]
+    },
+    {
+      "rite_id": "rite:marsh-boundary-procession",
+      "label": "Marsh boundary procession",
+      "kind": "pilgrimage",
+      "obligations": [{ "obligation_id": "obligation:walk-boundary", "category": "required_action", "description": "Walking the marsh edge renews land legitimacy." }],
+      "taboos": [{ "taboo_id": "taboo:unwalked-border", "boundary": "Skipping the boundary makes land claims suspect." }],
+      "sacred_places": [{ "place_id": "place:marsh-edge", "label": "Marsh edge", "access_note": "Legitimate route but fever-prone." }],
+      "calendar_events": [{ "event_id": "calendar:boundary-day", "timing": "annual boundary day", "activates": "Legitimacy duty collides with fever risk." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "fever-marsh-procession" }]
+    },
+    {
+      "rite_id": "rite:cloth-fast",
+      "label": "Cloth fast",
+      "kind": "protection",
+      "obligations": [{ "obligation_id": "obligation:protect-ritual-cloth", "category": "forbidden_action", "description": "Ritual cloth cannot become emergency blankets until the fast breaks." }],
+      "taboos": [{ "taboo_id": "taboo:warmth-from-vow-cloth", "boundary": "Using protected cloth for warmth saves bodies but breaks trust." }],
+      "sacred_places": [{ "place_id": "place:cloth-store", "label": "Cloth store", "access_note": "Protected through winter fast." }],
+      "calendar_events": [{ "event_id": "calendar:winter-fast", "timing": "winter fast", "activates": "Cloth protection overrides ordinary material use." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "moth-year-cloth-fast" }]
+    },
+    {
+      "rite_id": "rite:elk-road-marker",
+      "label": "Elk road marker",
+      "kind": "pilgrimage",
+      "obligations": [{ "obligation_id": "obligation:arrive-by-marker", "category": "required_action", "description": "Pilgrims must reach the marker by the appointed day." }],
+      "taboos": [{ "taboo_id": "taboo:forced-herd-crossing", "boundary": "Forcing passage through the herd disrespects the road sign." }],
+      "sacred_places": [{ "place_id": "place:pilgrim-road", "label": "Pilgrim road", "access_note": "Blocked by migration during marker week." }],
+      "calendar_events": [{ "event_id": "calendar:marker-week", "timing": "marker week", "activates": "Sacred arrival timing collides with herd passage." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "elk-road-pilgrimage" }]
+    },
+    {
+      "rite_id": "rite:ash-grove-vow",
+      "label": "Ash grove vow",
+      "kind": "oath",
+      "obligations": [{ "obligation_id": "obligation:replant-after-firebreak", "category": "costly_offering", "description": "Cutting the grove requires public replanting and memory vows." }],
+      "taboos": [{ "taboo_id": "taboo:forget-cut-grove", "boundary": "A grove cut without vow becomes civic desecration." }],
+      "sacred_places": [{ "place_id": "place:ash-grove", "label": "Ash grove", "access_note": "Protected unless firebreak vow is made." }],
+      "calendar_events": [{ "event_id": "calendar:dry-fire-season", "timing": "dry fire season", "activates": "Firebreak urgency tests grove protection." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "ash-grove-fire-vow" }]
+    },
+    {
+      "rite_id": "rite:salmon-bell-funeral",
+      "label": "Salmon bell funeral",
+      "kind": "funeral",
+      "obligations": [{ "obligation_id": "obligation:answer-funeral-bell", "category": "mourning_duty", "description": "The settlement must attend the funeral bell even during the river food window." }],
+      "taboos": [{ "taboo_id": "taboo:unanswered-bell", "boundary": "Ignoring the bell for fish marks the dead as traded away." }],
+      "sacred_places": [{ "place_id": "place:bell-river", "label": "Bell river", "access_note": "Funeral and weir labor compete at the river." }],
+      "calendar_events": [{ "event_id": "calendar:salmon-run-funeral", "timing": "salmon run funeral day", "activates": "Food abundance and mourning duty share one weather window." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "salmon-bell-funeral" }]
+    }
+  ]
+}

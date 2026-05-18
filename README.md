@@ -39,6 +39,12 @@ generic religion flavor or downstream mechanics.
 5. Defer simulation/runtime extraction until at least two consumers prove the
    same product-neutral ritual/meaning primitives.
 
+## Agent expansion
+
+[`docs\agent-expansion-experiment.md`](docs\agent-expansion-experiment.md)
+defines the agent-driven experiment for expanding RITE through 50-100 candidate
+ritual/meaning capability systems while improving the rubric after each batch.
+
 ## Non-goals
 
 - RITE does not prescribe real-world religious truth or theology.
@@ -59,9 +65,14 @@ generic religion flavor or downstream mechanics.
 
 ## First validation
 
+RITE uses [`QUALITY_RUBRIC.md`](QUALITY_RUBRIC.md) to score meaning pressure,
+obligation clarity, place/calendar grounding, downstream boundaries, and
+evidence readiness before an artifact is promoted beyond a draft seed.
+
 ```powershell
 cargo fmt --check
 cargo test
 cargo run -p rite-cli -- validate fixtures\seed-rite.json
+cargo run -p rite-cli -- validate fixtures\consumers\banish-nature-rite-gamepack.json
 git grep -n "RITE" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
 ```
