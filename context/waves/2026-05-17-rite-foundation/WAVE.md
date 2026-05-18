@@ -27,4 +27,4 @@ fixture, repo-local skills, and TRACKER dependency placement.
 | 2 | Rite and obligation schema | Add fixtures that prove evidence-backed sacred cost and obligation. |
 | 3 | Taboo, place, and calendar schema | Add fixtures that prove taboo, sacred-place, timing, mourning, and legitimacy pressure. |
 | 4 | Consumer probes | Validate BANISH, LUCIA, CANON, PORTO, CERES, and MAXIM fixture slices. |
-| 5 | Publisher contract | Document generated CROP, PEBBLE, FLETCH, and PROOF artifact boundaries. |
+| 5 | Publisher contract | First FLETCH local registry seed; CROP, PEBBLE, and PROOF boundaries remain planned. Validate with `fletch registry validate --file .fletch\registries\rite-foundation-assets.json`. |

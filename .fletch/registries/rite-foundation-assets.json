@@ -1,0 +1,35 @@
+{
+  "schema_version": "fletch.registry.v1",
+  "generated_by": "RITE foundation assets",
+  "registry_id": "rite-foundation-assets",
+  "fletches": [
+    {
+      "id": "rite.foundation.seed-rite",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "fixtures/seed-rite.json"}],
+      "metadata": {"owner_repo": "RITE", "asset_kind": "seed-fixture", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["rite", "ritual", "obligation", "fixture", "seed"]
+    },
+    {
+      "id": "rite.consumer.banish-nature-rite-gamepack",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "fixtures/consumers/banish-nature-rite-gamepack.json"}],
+      "metadata": {"owner_repo": "RITE", "asset_kind": "consumer-probe", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["rite", "banish", "consumer-probe", "obligation", "nature-rite"]
+    },
+    {
+      "id": "rite.foundation.quality-rubric",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "QUALITY_RUBRIC.md"}],
+      "metadata": {"owner_repo": "RITE", "asset_kind": "quality-rubric", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["rite", "rubric", "evidence", "meaning", "quality"]
+    },
+    {
+      "id": "rite.foundation.capability-expansion",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "docs/capability-expansion.md"}],
+      "metadata": {"owner_repo": "RITE", "asset_kind": "capability-map", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["rite", "capabilities", "ritual", "expansion", "planning"]
+    }
+  ]
+}
